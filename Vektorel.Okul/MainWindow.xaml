@@ -1,0 +1,19 @@
+﻿<Window x:Class="Vektorel.Okul.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vektorel.Okul"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="txtAd"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="360,79,0,0"/>
+        <TextBox Name="txtSoyad" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="360,121,0,0"/>
+        <TextBox Name="txtNumara" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="360,164,0,0"/>
+        <Label Content="Ad" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,76,0,0"/>
+        <Label Content="Soyad" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,118,0,0"/>
+        <Label Content="Numara" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,161,0,0"/>
+        <Button  Content="Kaydet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="323,210,0,0" Click="Button_Click"/>
+
+    </Grid>
+</Window>
