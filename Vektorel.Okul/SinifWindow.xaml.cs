@@ -35,7 +35,7 @@ namespace Vektorel.Okul
             
 
 
-            MessageBox.Show(sb.SinifEkle(new Sinif { Sinifad = txtSinifad.Text.ToUpper().Trim(), Kontenjan = Convert.ToInt32(txtKontenjan.Text.Trim()) }) ? "ekleme başarılı" : "başarısız");
+            MessageBox.Show(sb.SinifEkle(new Sinif { Sinifad = txtSinifad.Text.ToUpper().Trim(), Kontenjan = Convert.ToInt32(txtKontenjan.Text.Trim()) }) ? "ekleme başarılı" : "başarısızz");
 
         }
 
