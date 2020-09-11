@@ -5,15 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vektorel.Okul"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
+
         <TextBox Name="txtAd"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="360,79,0,0"/>
         <TextBox Name="txtSoyad" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="360,121,0,0"/>
         <TextBox Name="txtNumara" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="360,164,0,0"/>
         <Label Content="Ad" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,76,0,0"/>
         <Label Content="Soyad" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,118,0,0"/>
         <Label Content="Numara" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,161,0,0"/>
-        <Button  Content="Kaydet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="323,210,0,0" Click="Button_Click"/>
+        <Button  Content="Kaydet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="334,267,0,0" Click="Button_Click"/>
+        <ComboBox DisplayMemberPath="Sinifad" Name="cmbSiniflar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="360,218,0,0" ItemsSource="{Binding}" SelectedValuePath="Sinifid"/>
+        <Label Content="Sınıfı" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,218,0,0"/>
+        <Label Content="Sınıfı" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,218,0,0"/>
+
 
     </Grid>
 </Window>
